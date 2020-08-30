@@ -1,0 +1,428 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 自定義CSS */
+*,*::after,*::before {
+	box-sizing: border-box;
+  }
+/* for all */
+body{
+    font-family: 微軟正黑體, sans-serif;
+}
+.container{
+    max-width: 940px;
+	margin: 0 auto;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+/* header */
+.header{
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0;
+}
+.logo{
+	width: 171px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+    text-indent: 101%;
+    white-space: nowrap;
+	background-size: contain;
+	width: 172px;
+    height: 40px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.header ul{
+	width: 319px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header ul img{
+	width: 24px;
+}
+.header ul a{
+	padding: 5px 20px;
+	color: #3F5D45;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 16px;
+}
+.header ul a:hover{
+	border-bottom: 8px solid #EAF0ED;
+}
+/* banner */
+.banner{
+	margin-bottom: 60px;
+}
+.main{
+	display: flex;
+	text-align: center;
+	line-height: 40px;
+}
+.menu{
+	width: 300px;
+	font-size: 24px;
+	font-weight: 500;
+	margin-right: 20px;
+}
+.menu h2{
+	font-weight: bold;
+	padding: 16px 0;
+	color: #EAF0ED;
+	background: #3F5D45;
+}
+.menu a{
+	padding: 16px 0;
+	font-size: 24px;
+	font-weight: bold;
+	color: #3F5D45;
+	text-decoration: none;
+	border: 1px solid #EAF0ED;
+}
+.menu a:hover{
+	background: #EAF0ED;
+}
+/* main */
+.todaySpecail{
+	position: relative;
+	display: flex;
+}
+.todaySpecail-label{
+    top: 0;
+	left: 20px;
+	padding: 10px;
+	width: 36px;
+	line-height: 20px;
+    background:#3F5D45;
+	color:#EAF0ED;
+	font-weight: bold;
+	position: absolute;
+}
+.todaySpecail-heart{
+	position: absolute;
+	top: 19px;
+	right: 22px;
+}
+.card-menu{
+	width: 620px;
+	margin-bottom: 20px;
+}
+.card-menu li{
+	padding-bottom: 20px;
+}
+.card-menu-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.cart{
+    background: #EAF0ED;
+    color: #3F5D45;
+    font-size: 24px;
+    line-height: 20px;
+	text-align: center;
+	font-weight: bold;
+	padding: 16px 90px;
+	text-decoration: none;
+}
+
+.cart:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.card-desc{
+	display: flex;
+}
+.card-desc h3{
+	font-size: 20px;
+    line-height: 20px;
+    width: 50%;
+	color: #3F5D45;
+	border-left: 1px solid #EAF0ED;
+	border-right: 1px solid #EAF0ED;
+	border-bottom: 1px solid #EAF0ED;
+	padding: 14px 0;
+  }
+  .card-desc span{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 24px;
+	width: 50%;
+	color: #3F5D45;
+	background: #fff;
+	border-right: 1px solid #EAF0ED;
+	border-bottom: 1px solid #EAF0ED;
+	padding: 14px 0;
+  }
+  /* page */
+  .page{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.page-number{
+	width: 60px;
+	height: 60px;
+    border: 1px solid #EAF0ED;
+    font-size: 20px;
+    line-height: 28px;
+}
+  .page-number a{
+	display: block;
+    padding: 16px 24px;
+    text-decoration: none;
+    color: #3F5D45;
+  }
+  .page-number:hover {
+	background-color: #EAF0ED;
+  }
+  .page-arrow{
+	width: 60px;
+	height: 60px;
+    border: 1px solid #EAF0ED;
+	text-align: center;  
+}
+	.page-arrow a{
+	 padding: 18px;
+}
+  .page-arrow:hover {
+	 border: 1px solid #3F5D45;
+  }
+
+  /* .footer-form */
+  .footer-form {
+    background-color: #3F5D45;
+	padding: 30px 0;
+	
+}
+  .form-container {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+  .form-label {
+    display: flex;
+    align-items: center;
+}
+  .form-label img {
+    height: 40px;
+	margin-right: 20px;
+}
+  .form-label span {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: bold;
+	color: #EAF0ED;
+}
+  .form-input {
+    display: flex;
+	position: relative;
+}
+  .form-input input {
+	width: 380px;
+    height: 56px;
+    font-weight: bold;
+    color: #3F5D45;
+    outline: none;
+    border: none;
+}
+  .mailIcon {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    bottom: 16px;
+}
+  .form-input button {
+    background-color: #FFE180;
+    padding: 16px;
+    outline: none;
+	border: none;
+	cursor: pointer;
+}
+.form-input button:hover{
+	background-color:orange;
+}
+/* footer */
+  .footer {
+    background-color: #EAF0ED;
+    padding: 30px 0px;
+}
+  .footer-container{
+	max-width: 920px;
+	margin: 0 auto;
+}
+  .footer-container-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+  .contact-method {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  .contact-method img{
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 101%;
+}
+  .contact-list {
+    font-size: 16px;
+    line-height: 24px;
+    color: #3F5D45;
+}
+  .slogan {
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #3F5D45;
+}
+  .footer-container-bottom {
+    display: flex;
+    justify-content: space-between;
+	align-items: flex-end;
+}
+  .contact-link {
+	display: flex;
+}
+  .contact-link img {
+    width: 32px;
+    height: 32px;
+	margin-right: 8px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 101%;
+}
+  .rights {
+	font-family: Times;
+    font-size: 16px;
+	color: #3F5D45;
+}
+/* max-width: 991px */
+@media (max-width: 991px){
+    .container{
+        max-width: 767px;
+	}
+	.logo{
+text-align: center;
+	}
+    .banner{
+        margin-bottom: 0;
+	}
+	.main{
+		flex-wrap: wrap;
+	}
+    .menu{
+        width: 100%;
+		margin-bottom: 30px;
+		margin-right: 0px;
+    }
+    .card-menu{
+        width: 100%;
+	}
+    .card-menu-list{
+        justify-content: space-around;
+    }
+    .page{
+        justify-content: center;
+    }
+    .form-container {
+		flex-direction: column;
+		justify-content: center;
+    }
+    .form-label {
+        margin-bottom: 10px;
+	}
+	.footer-container{
+		max-width: 770px;
+	}
+}
+/* max-width: 767px */
+@media (max-width: 767px){
+    .slogan{
+        display: none;
+    }
+    .header li{
+        visibility:hidden;
+	}
+    .header{
+        justify-content: space-around;
+	}
+    .logo{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg);
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+		align-items: center;
+		text-align: center;
+    }
+    .contact-method img{
+        margin-bottom: 40px;
+    }
+    .footer-container-bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-link{
+        margin-bottom: 23px;
+    }
+}
