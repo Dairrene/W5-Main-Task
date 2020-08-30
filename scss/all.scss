@@ -1,10 +1,6 @@
-.header{
-    a{
-        width: 100px;
-        ul{
-            height: 200px;
-            padding: 200px;
-        }
-    }
-}
+@import "_reset.scss";
+@import "_variable.scss";
 
+@import "_layout.scss";
+
+@import "_paySuccess.scss";
